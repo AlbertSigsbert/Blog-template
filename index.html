@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+        <script src="https://kit.fontawesome.com/95d236797e.js" crossorigin="anonymous"></script>
+    <title>Home</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="bg-green-100 shadow dark:bg-gray-800">
+        <div class="container px-6 py-3 mx-auto md:flex md:justify-between md:items-center">
+            <div class="flex items-center justify-between">
+                <div>
+                    <a class="text-xl font-bold text-gray-800 dark:text-white md:text-2xl hover:text-gray-700 dark:hover:text-gray-300"
+                        href="#">Company</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="flex md:hidden">
+                    <button type="button"
+                        class="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400"
+                        aria-label="toggle menu" id="toggle-menu">
+                        <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
+                            <path fill-rule="evenodd"
+                                d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
+            <div class="flex justify-center items-center md:flex" id="menu">
+                <div class="flex flex-col md:flex-row md:mx-6 my-12 md:my-0">
+                    <a class="my-1 text-gray-700 dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400 md:mx-4 md:my-0"
+                        href="#">Home</a>
+                  
+                    <a class="my-1 text-gray-700 dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400 md:mx-4 md:my-0"
+                        href="#">Contact</a>
+                    <a class="my-1 text-gray-700 dark:text-gray-200 hover:text-indigo-500 dark:hover:text-indigo-400 md:mx-4 md:my-0"
+                        href="#">About</a>
+                    <a class="my-1 text-gray-700 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-300 md:mx-4 md:my-0"
+                    href="#">
+                        <i class="fas fa-moon"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- NAVBAR-ENDS -->
+
+    <!-- HERO-SECTION -->
+    <section class="hero">
+        <div class="bg-green-100 w-full p-20 md:py-36 mx-auto text-center h-screen md:h-auto">
+            <h2 class="text-3xl md:text-5xl font-bold">Hello World!!!</h2>
+            <p class="py-4 w-11/12 md:w-1/2 mx-auto leading-6 text-base md:text-xl" style="font-family: 'Roboto', sans-serif;">Lorem ipsum dolor
+                sit, amet consectetur adipisicing elit.
+                Labore enim numquam suscipit ut repellat magni
+                mollitia voluptatem quae expedita dolore earum, soluta voluptates animi laborum adipisci officiis vel
+                laudantium perferendis?
+            </p>
+        </div>
+    </section>
+    <!-- HERO-SECTION ENDS-->
+
+    <!--LINE-TABS -->
+    <div class="container md:w-full my-16 mx-auto">
+        <ul class="list-reset flex border-b">
+            <li class="-mb-px mr-1">
+                <a class="bg-white inline-block rounded-t py-2 px-4 hover:text-purple-500 focus:outline-none"
+                    href="#">Tab</a>
+            </li>
+            <li class="mr-1">
+                <a class="bg-white inline-block border-b-2 py-2 px-4 hover:text-blue-darker font-semibold hover:text-purple-500 focus:outline-none"
+                    href="#">Active</a>
+            </li>
+            <li class="mr-1">
+                <a class="bg-white inline-block py-2 px-4 hover:text-blue-darker hover:text-purple-500 focus:outline-none"
+                    href="#">Tab</a>
+            </li>
+            <li class="mr-1">
+                <a class="bg-white inline-block py-2 px-4 hover:text-purple-500 focus:outline-none" href="#">Tab</a>
+            </li>
+        </ul>
+    </div>
+    <!--LINE-TABS END -->
+
+    <!--GRID-SECTION -->
+    <div class="container w-full mx-auto my-16 text-center bg-white">
+        <!-- Component Code -->
+        <div class="p-5 sm:p-10 md:p-0">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-10">
+                <div class="rounded overflow-hidden shadow-lg">
+                    <a href="#">
+                        <div class="relative">
+                            <img class="w-full"
+                                src="https://images.pexels.com/photos/196667/pexels-photo-196667.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                alt="Sunset in the mountains">
+                        </div>
+                    </a>
+
+                    <div class="p-3 text-left">
+                        <a href="" class="text-blue-700 font-bold">Category1</a>
+                    </div>
+
+                    <div class="text-left px-3 pb-4">
+                        <a href="#"
+                            class="font-semibold text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out">
+                            Best
+                            View in Newyork City Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+                            ab?</a>
+                        <p class="text-gray-500 text-sm py-2">
+                            The city that never sleeps Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Architecto excepturi ipsam voluptatem ab, eius maxime tempore ipsa iste cupiditate
+                            accusantium accusamus dolores, hic temporibus minima voluptatibus aperiam enim quae fuga!
+                        </p>
+                    </div>
+
+                    <div class="flex space-x-4 px-3">
+                        <span class="text-xs px-2 font-medium bg-gray-500 bg-opacity-10 text-gray-800 rounded py-0.5">
+                            Badge
+                        </span>
+                        <span class="text-xs px-2 font-medium bg-red-500 bg-opacity-10 text-red-800 rounded py-0.5">
+                            Badge
+                        </span>
+
+                        <span
+                            class="text-xs px-2 font-medium bg-yellow-500 bg-opacity-10 text-yellow-800 rounded py-0.5">
+                            Badge
+                        </span>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+
+                        <div class="px-4 py-4 flex flex-row items-center">
+                            <span href="#"
+                                class="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row items-center">
+                                <svg height="13px" width="13px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                                    style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M277.333,256
+                                                        c0,11.797-9.536,21.333-21.333,21.333h-85.333c-11.797,0-21.333-9.536-21.333-21.333s9.536-21.333,21.333-21.333h64v-128
+                                                        c0-11.797,9.536-21.333,21.333-21.333s21.333,9.536,21.333,21.333V256z" />
+                                        </g>
+                                    </g>
+                                </svg>
+                                <span class="ml-1">6 mins ago</span></span>
+
+                        </div>
+
+                        <div>
+                            <a class="text-blue-500 hover:text-blue-700 font-bold py-2 px-4 ">
+                                Read More
+                            </a>
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+                <div class="rounded overflow-hidden shadow-lg">
+                    <a href="#">
+                        <div class="relative">
+                            <img class="w-full"
+                                src="https://images.pexels.com/photos/196667/pexels-photo-196667.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                alt="Sunset in the mountains">
+                        </div>
+                    </a>
+
+                    <div class="p-3 text-left">
+                        <a href="" class="text-blue-700 font-bold">Category1</a>
+                    </div>
+
+                    <div class="text-left px-3 pb-4">
+                        <a href="#"
+                            class="font-semibold text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out">
+                            Best
+                            View in Newyork City Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+                            ab?</a>
+                        <p class="text-gray-500 text-sm py-2">
+                            The city that never sleeps Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Architecto excepturi ipsam voluptatem ab, eius maxime tempore ipsa iste cupiditate
+                            accusantium accusamus dolores, hic temporibus minima voluptatibus aperiam enim quae fuga!
+                        </p>
+                    </div>
+
+                    <div class="flex space-x-4 px-3">
+                        <span class="text-xs px-2 font-medium bg-gray-500 bg-opacity-10 text-gray-800 rounded py-0.5">
+                            Badge
+                        </span>
+                        <span class="text-xs px-2 font-medium bg-red-500 bg-opacity-10 text-red-800 rounded py-0.5">
+                            Badge
+                        </span>
+
+                        <span
+                            class="text-xs px-2 font-medium bg-yellow-500 bg-opacity-10 text-yellow-800 rounded py-0.5">
+                            Badge
+                        </span>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+
+                        <div class="px-4 py-4 flex flex-row items-center">
+                            <span href="#"
+                                class="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row items-center">
+                                <svg height="13px" width="13px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                                    style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M277.333,256
+                                                        c0,11.797-9.536,21.333-21.333,21.333h-85.333c-11.797,0-21.333-9.536-21.333-21.333s9.536-21.333,21.333-21.333h64v-128
+                                                        c0-11.797,9.536-21.333,21.333-21.333s21.333,9.536,21.333,21.333V256z" />
+                                        </g>
+                                    </g>
+                                </svg>
+                                <span class="ml-1">6 mins ago</span></span>
+
+                        </div>
+
+                        <div>
+                            <a class="text-blue-500 hover:text-blue-700 font-bold py-2 px-4 ">
+                                Read More
+                            </a>
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+                <div class="rounded overflow-hidden shadow-lg">
+                    <a href="#">
+                        <div class="relative">
+                            <img class="w-full"
+                                src="https://images.pexels.com/photos/196667/pexels-photo-196667.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                alt="Sunset in the mountains">
+                        </div>
+                    </a>
+
+                    <div class="p-3 text-left">
+                        <a href="" class="text-blue-700 font-bold">Category1</a>
+                    </div>
+
+                    <div class="text-left px-3 pb-4">
+                        <a href="#"
+                            class="font-semibold text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out">
+                            Best
+                            View in Newyork City Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+                            ab?</a>
+                        <p class="text-gray-500 text-sm py-2">
+                            The city that never sleeps Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Architecto excepturi ipsam voluptatem ab, eius maxime tempore ipsa iste cupiditate
+                            accusantium accusamus dolores, hic temporibus minima voluptatibus aperiam enim quae fuga!
+                        </p>
+                    </div>
+
+                    <div class="flex space-x-4 px-3">
+                        <span class="text-xs px-2 font-medium bg-gray-500 bg-opacity-10 text-gray-800 rounded py-0.5">
+                            Badge
+                        </span>
+                        <span class="text-xs px-2 font-medium bg-red-500 bg-opacity-10 text-red-800 rounded py-0.5">
+                            Badge
+                        </span>
+
+                        <span
+                            class="text-xs px-2 font-medium bg-yellow-500 bg-opacity-10 text-yellow-800 rounded py-0.5">
+                            Badge
+                        </span>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+
+                        <div class="px-4 py-4 flex flex-row items-center">
+                            <span href="#"
+                                class="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row items-center">
+                                <svg height="13px" width="13px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                                    style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M277.333,256
+                                                        c0,11.797-9.536,21.333-21.333,21.333h-85.333c-11.797,0-21.333-9.536-21.333-21.333s9.536-21.333,21.333-21.333h64v-128
+                                                        c0-11.797,9.536-21.333,21.333-21.333s21.333,9.536,21.333,21.333V256z" />
+                                        </g>
+                                    </g>
+                                </svg>
+                                <span class="ml-1">6 mins ago</span></span>
+
+                        </div>
+
+                        <div>
+                            <a class="text-blue-500 hover:text-blue-700 font-bold py-2 px-4 ">
+                                Read More
+                            </a>
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+                <div class="rounded overflow-hidden shadow-lg">
+                    <a href="#">
+                        <div class="relative">
+                            <img class="w-full"
+                                src="https://images.pexels.com/photos/196667/pexels-photo-196667.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                alt="Sunset in the mountains">
+                        </div>
+                    </a>
+
+                    <div class="p-3 text-left">
+                        <a href="" class="text-blue-700 font-bold">Category1</a>
+                    </div>
+
+                    <div class="text-left px-3 pb-4">
+                        <a href="#"
+                            class="font-semibold text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out">
+                            Best
+                            View in Newyork City Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+                            ab?</a>
+                        <p class="text-gray-500 text-sm py-2">
+                            The city that never sleeps Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Architecto excepturi ipsam voluptatem ab, eius maxime tempore ipsa iste cupiditate
+                            accusantium accusamus dolores, hic temporibus minima voluptatibus aperiam enim quae fuga!
+                        </p>
+                    </div>
+
+                    <div class="flex space-x-4 px-3">
+                        <span class="text-xs px-2 font-medium bg-gray-500 bg-opacity-10 text-gray-800 rounded py-0.5">
+                            Badge
+                        </span>
+                        <span class="text-xs px-2 font-medium bg-red-500 bg-opacity-10 text-red-800 rounded py-0.5">
+                            Badge
+                        </span>
+
+                        <span
+                            class="text-xs px-2 font-medium bg-yellow-500 bg-opacity-10 text-yellow-800 rounded py-0.5">
+                            Badge
+                        </span>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+
+                        <div class="px-4 py-4 flex flex-row items-center">
+                            <span href="#"
+                                class="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row items-center">
+                                <svg height="13px" width="13px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                                    style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M277.333,256
+                                                        c0,11.797-9.536,21.333-21.333,21.333h-85.333c-11.797,0-21.333-9.536-21.333-21.333s9.536-21.333,21.333-21.333h64v-128
+                                                        c0-11.797,9.536-21.333,21.333-21.333s21.333,9.536,21.333,21.333V256z" />
+                                        </g>
+                                    </g>
+                                </svg>
+                                <span class="ml-1">6 mins ago</span></span>
+
+                        </div>
+
+                        <div>
+                            <a class="text-blue-500 hover:text-blue-700 font-bold py-2 px-4 ">
+                                Read More
+                            </a>
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+                <div class="rounded overflow-hidden shadow-lg">
+                    <a href="#">
+                        <div class="relative">
+                            <img class="w-full"
+                                src="https://images.pexels.com/photos/196667/pexels-photo-196667.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                alt="Sunset in the mountains">
+                        </div>
+                    </a>
+
+                    <div class="p-3 text-left">
+                        <a href="" class="text-blue-700 font-bold">Category1</a>
+                    </div>
+
+                    <div class="text-left px-3 pb-4">
+                        <a href="#"
+                            class="font-semibold text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out">
+                            Best
+                            View in Newyork City Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+                            ab?</a>
+                        <p class="text-gray-500 text-sm py-2">
+                            The city that never sleeps Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Architecto excepturi ipsam voluptatem ab, eius maxime tempore ipsa iste cupiditate
+                            accusantium accusamus dolores, hic temporibus minima voluptatibus aperiam enim quae fuga!
+                        </p>
+                    </div>
+
+                    <div class="flex space-x-4 px-3">
+                        <span class="text-xs px-2 font-medium bg-gray-500 bg-opacity-10 text-gray-800 rounded py-0.5">
+                            Badge
+                        </span>
+                        <span class="text-xs px-2 font-medium bg-red-500 bg-opacity-10 text-red-800 rounded py-0.5">
+                            Badge
+                        </span>
+
+                        <span
+                            class="text-xs px-2 font-medium bg-yellow-500 bg-opacity-10 text-yellow-800 rounded py-0.5">
+                            Badge
+                        </span>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+
+                        <div class="px-4 py-4 flex flex-row items-center">
+                            <span href="#"
+                                class="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row items-center">
+                                <svg height="13px" width="13px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                                    style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M277.333,256
+                                                        c0,11.797-9.536,21.333-21.333,21.333h-85.333c-11.797,0-21.333-9.536-21.333-21.333s9.536-21.333,21.333-21.333h64v-128
+                                                        c0-11.797,9.536-21.333,21.333-21.333s21.333,9.536,21.333,21.333V256z" />
+                                        </g>
+                                    </g>
+                                </svg>
+                                <span class="ml-1">6 mins ago</span></span>
+
+                        </div>
+
+                        <div>
+                            <a class="text-blue-500 hover:text-blue-700 font-bold py-2 px-4 ">
+                                Read More
+                            </a>
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+                <div class="rounded overflow-hidden shadow-lg">
+                    <a href="#">
+                        <div class="relative">
+                            <img class="w-full"
+                                src="https://images.pexels.com/photos/196667/pexels-photo-196667.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                alt="Sunset in the mountains">
+                        </div>
+                    </a>
+
+                    <div class="p-3 text-left">
+                        <a href="" class="text-blue-700 font-bold">Category1</a>
+                    </div>
+
+                    <div class="text-left px-3 pb-4">
+                        <a href="#"
+                            class="font-semibold text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out">
+                            Best
+                            View in Newyork City Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+                            ab?</a>
+                        <p class="text-gray-500 text-sm py-2">
+                            The city that never sleeps Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Architecto excepturi ipsam voluptatem ab, eius maxime tempore ipsa iste cupiditate
+                            accusantium accusamus dolores, hic temporibus minima voluptatibus aperiam enim quae fuga!
+                        </p>
+                    </div>
+
+                    <div class="flex space-x-4 px-3">
+                        <span class="text-xs px-2 font-medium bg-gray-500 bg-opacity-10 text-gray-800 rounded py-0.5">
+                            Badge
+                        </span>
+                        <span class="text-xs px-2 font-medium bg-red-500 bg-opacity-10 text-red-800 rounded py-0.5">
+                            Badge
+                        </span>
+
+                        <span
+                            class="text-xs px-2 font-medium bg-yellow-500 bg-opacity-10 text-yellow-800 rounded py-0.5">
+                            Badge
+                        </span>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+
+                        <div class="px-4 py-4 flex flex-row items-center">
+                            <span href="#"
+                                class="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row items-center">
+                                <svg height="13px" width="13px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                                    style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M277.333,256
+                                                        c0,11.797-9.536,21.333-21.333,21.333h-85.333c-11.797,0-21.333-9.536-21.333-21.333s9.536-21.333,21.333-21.333h64v-128
+                                                        c0-11.797,9.536-21.333,21.333-21.333s21.333,9.536,21.333,21.333V256z" />
+                                        </g>
+                                    </g>
+                                </svg>
+                                <span class="ml-1">6 mins ago</span></span>
+
+                        </div>
+
+                        <div>
+                            <a class="text-blue-500 hover:text-blue-700 font-bold py-2 px-4 ">
+                                Read More
+                            </a>
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+                <div class="rounded overflow-hidden shadow-lg">
+                    <a href="#">
+                        <div class="relative">
+                            <img class="w-full"
+                                src="https://images.pexels.com/photos/196667/pexels-photo-196667.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                alt="Sunset in the mountains">
+                        </div>
+                    </a>
+
+                    <div class="p-3 text-left">
+                        <a href="" class="text-blue-700 font-bold">Category1</a>
+                    </div>
+
+                    <div class="text-left px-3 pb-4">
+                        <a href="#"
+                            class="font-semibold text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out">
+                            Best
+                            View in Newyork City Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+                            ab?</a>
+                        <p class="text-gray-500 text-sm py-2">
+                            The city that never sleeps Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Architecto excepturi ipsam voluptatem ab, eius maxime tempore ipsa iste cupiditate
+                            accusantium accusamus dolores, hic temporibus minima voluptatibus aperiam enim quae fuga!
+                        </p>
+                    </div>
+
+                    <div class="flex space-x-4 px-3">
+                        <span class="text-xs px-2 font-medium bg-gray-500 bg-opacity-10 text-gray-800 rounded py-0.5">
+                            Badge
+                        </span>
+                        <span class="text-xs px-2 font-medium bg-red-500 bg-opacity-10 text-red-800 rounded py-0.5">
+                            Badge
+                        </span>
+
+                        <span
+                            class="text-xs px-2 font-medium bg-yellow-500 bg-opacity-10 text-yellow-800 rounded py-0.5">
+                            Badge
+                        </span>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+
+                        <div class="px-4 py-4 flex flex-row items-center">
+                            <span href="#"
+                                class="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row items-center">
+                                <svg height="13px" width="13px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                                    style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M277.333,256
+                                                        c0,11.797-9.536,21.333-21.333,21.333h-85.333c-11.797,0-21.333-9.536-21.333-21.333s9.536-21.333,21.333-21.333h64v-128
+                                                        c0-11.797,9.536-21.333,21.333-21.333s21.333,9.536,21.333,21.333V256z" />
+                                        </g>
+                                    </g>
+                                </svg>
+                                <span class="ml-1">6 mins ago</span></span>
+
+                        </div>
+
+                        <div>
+                            <a class="text-blue-500 hover:text-blue-700 font-bold py-2 px-4 ">
+                                Read More
+                            </a>
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- GRID-SECTION-ENDS -->
+
+    <!-- NEWSLETTER -->
+    <div class="bg-green-100">
+       <div class="container mx-auto text-center py-32">
+        <h1 class="font-bold text-2xl md:text-4xl text-center">Subscribe blog for latest updates</h1>
+        <p class="py-8 w-3/4 md:w-1/2 mx-auto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt temporibus consequatur aspernatur nam quaerat eos, ex voluptatibus maiores veniam magni autem alias deleniti impedit reprehenderit qui, odit, fugiat nobis neque!</p>
+        <div class="flex flex-col md:flex-row gap-y-5 items-center  md:justify-center  ">
+            <div>
+                <input class="pl-4 pr-28 md:pr-64 py-3 md:py-4 rounded focus:outline-none focus:ring-2 focus:ring-green-300 focus:border-transparent" type="text" placeholder="Enter email address">
+            </div>
+            <button class="bg-green-300 py-3 md:py-4 px-5 md:ml-6 rounded font-bold">Subscribe Now</button>
+        </div>
+        <small class="w-1/2 mx-auto text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </small>
+       </div>
+    </div>
+    <!-- NEWSLETTER ENDS -->
+  
+    <!--More posts-->
+    <div class="container w-full mx-auto my-16 text-center bg-white">
+        <!-- Component Code -->
+        <div class=" p-5 sm:p-10 md:p-0">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
+                <div class="rounded overflow-hidden shadow-lg">
+                    <a href="#">
+                        <div class="relative">
+                            <img class="w-full"
+                                src="https://images.pexels.com/photos/196667/pexels-photo-196667.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                alt="Sunset in the mountains">
+                        </div>
+                    </a>
+
+                    <div class="p-3 text-left">
+                        <a href="" class="text-blue-700 font-bold">Category1</a>
+                    </div>
+
+                    <div class="text-left px-3 pb-4">
+                        <a href="#"
+                            class="font-semibold text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out">
+                            Best
+                            View in Newyork City Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+                            ab?</a>
+                        <p class="text-gray-500 text-sm py-2">
+                            The city that never sleeps Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Architecto excepturi ipsam voluptatem ab, eius maxime tempore ipsa iste cupiditate
+                            accusantium accusamus dolores, hic temporibus minima voluptatibus aperiam enim quae fuga!
+                        </p>
+                    </div>
+
+                    <div class="flex space-x-4 px-3">
+                        <span class="text-xs px-2 font-medium bg-gray-500 bg-opacity-10 text-gray-800 rounded py-0.5">
+                            Badge
+                        </span>
+                        <span class="text-xs px-2 font-medium bg-red-500 bg-opacity-10 text-red-800 rounded py-0.5">
+                            Badge
+                        </span>
+
+                        <span
+                            class="text-xs px-2 font-medium bg-yellow-500 bg-opacity-10 text-yellow-800 rounded py-0.5">
+                            Badge
+                        </span>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+
+                        <div class="px-4 py-4 flex flex-row items-center">
+                            <span href="#"
+                                class="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row items-center">
+                                <svg height="13px" width="13px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                                    style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M277.333,256
+                                                        c0,11.797-9.536,21.333-21.333,21.333h-85.333c-11.797,0-21.333-9.536-21.333-21.333s9.536-21.333,21.333-21.333h64v-128
+                                                        c0-11.797,9.536-21.333,21.333-21.333s21.333,9.536,21.333,21.333V256z" />
+                                        </g>
+                                    </g>
+                                </svg>
+                                <span class="ml-1">6 mins ago</span></span>
+
+                        </div>
+
+                        <div>
+                            <a class="text-blue-500 hover:text-blue-700 font-bold py-2 px-4 ">
+                                Read More
+                            </a>
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+                <div class="rounded overflow-hidden shadow-lg">
+                    <a href="#">
+                        <div class="relative">
+                            <img class="w-full"
+                                src="https://images.pexels.com/photos/196667/pexels-photo-196667.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                alt="Sunset in the mountains">
+                        </div>
+                    </a>
+
+                    <div class="p-3 text-left">
+                        <a href="" class="text-blue-700 font-bold">Category1</a>
+                    </div>
+
+                    <div class="text-left px-3 pb-4">
+                        <a href="#"
+                            class="font-semibold text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out">
+                            Best
+                            View in Newyork City Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+                            ab?</a>
+                        <p class="text-gray-500 text-sm py-2">
+                            The city that never sleeps Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Architecto excepturi ipsam voluptatem ab, eius maxime tempore ipsa iste cupiditate
+                            accusantium accusamus dolores, hic temporibus minima voluptatibus aperiam enim quae fuga!
+                        </p>
+                    </div>
+
+                    <div class="flex space-x-4 px-3">
+                        <span class="text-xs px-2 font-medium bg-gray-500 bg-opacity-10 text-gray-800 rounded py-0.5">
+                            Badge
+                        </span>
+                        <span class="text-xs px-2 font-medium bg-red-500 bg-opacity-10 text-red-800 rounded py-0.5">
+                            Badge
+                        </span>
+
+                        <span
+                            class="text-xs px-2 font-medium bg-yellow-500 bg-opacity-10 text-yellow-800 rounded py-0.5">
+                            Badge
+                        </span>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+
+                        <div class="px-4 py-4 flex flex-row items-center">
+                            <span href="#"
+                                class="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row items-center">
+                                <svg height="13px" width="13px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                                    style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M277.333,256
+                                                        c0,11.797-9.536,21.333-21.333,21.333h-85.333c-11.797,0-21.333-9.536-21.333-21.333s9.536-21.333,21.333-21.333h64v-128
+                                                        c0-11.797,9.536-21.333,21.333-21.333s21.333,9.536,21.333,21.333V256z" />
+                                        </g>
+                                    </g>
+                                </svg>
+                                <span class="ml-1">6 mins ago</span></span>
+
+                        </div>
+
+                        <div>
+                            <a class="text-blue-500 hover:text-blue-700 font-bold py-2 px-4 ">
+                                Read More
+                            </a>
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+                <div class="rounded overflow-hidden shadow-lg">
+                    <a href="#">
+                        <div class="relative">
+                            <img class="w-full"
+                                src="https://images.pexels.com/photos/196667/pexels-photo-196667.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                alt="Sunset in the mountains">
+                        </div>
+                    </a>
+
+                    <div class="p-3 text-left">
+                        <a href="" class="text-blue-700 font-bold">Category1</a>
+                    </div>
+
+                    <div class="text-left px-3 pb-4">
+                        <a href="#"
+                            class="font-semibold text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out">
+                            Best
+                            View in Newyork City Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+                            ab?</a>
+                        <p class="text-gray-500 text-sm py-2">
+                            The city that never sleeps Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Architecto excepturi ipsam voluptatem ab, eius maxime tempore ipsa iste cupiditate
+                            accusantium accusamus dolores, hic temporibus minima voluptatibus aperiam enim quae fuga!
+                        </p>
+                    </div>
+
+                    <div class="flex space-x-4 px-3">
+                        <span class="text-xs px-2 font-medium bg-gray-500 bg-opacity-10 text-gray-800 rounded py-0.5">
+                            Badge
+                        </span>
+                        <span class="text-xs px-2 font-medium bg-red-500 bg-opacity-10 text-red-800 rounded py-0.5">
+                            Badge
+                        </span>
+
+                        <span
+                            class="text-xs px-2 font-medium bg-yellow-500 bg-opacity-10 text-yellow-800 rounded py-0.5">
+                            Badge
+                        </span>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+
+                        <div class="px-4 py-4 flex flex-row items-center">
+                            <span href="#"
+                                class="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row items-center">
+                                <svg height="13px" width="13px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                                    style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M277.333,256
+                                                        c0,11.797-9.536,21.333-21.333,21.333h-85.333c-11.797,0-21.333-9.536-21.333-21.333s9.536-21.333,21.333-21.333h64v-128
+                                                        c0-11.797,9.536-21.333,21.333-21.333s21.333,9.536,21.333,21.333V256z" />
+                                        </g>
+                                    </g>
+                                </svg>
+                                <span class="ml-1">6 mins ago</span></span>
+
+                        </div>
+
+                        <div>
+                            <a class="text-blue-500 hover:text-blue-700 font-bold py-2 px-4 ">
+                                Read More
+                            </a>
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+                <div class="rounded overflow-hidden shadow-lg">
+                    <a href="#">
+                        <div class="relative">
+                            <img class="w-full"
+                                src="https://images.pexels.com/photos/196667/pexels-photo-196667.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                alt="Sunset in the mountains">
+                        </div>
+                    </a>
+
+                    <div class="p-3 text-left">
+                        <a href="" class="text-blue-700 font-bold">Category1</a>
+                    </div>
+
+                    <div class="text-left px-3 pb-4">
+                        <a href="#"
+                            class="font-semibold text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out">
+                            Best
+                            View in Newyork City Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+                            ab?</a>
+                        <p class="text-gray-500 text-sm py-2">
+                            The city that never sleeps Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Architecto excepturi ipsam voluptatem ab, eius maxime tempore ipsa iste cupiditate
+                            accusantium accusamus dolores, hic temporibus minima voluptatibus aperiam enim quae fuga!
+                        </p>
+                    </div>
+
+                    <div class="flex space-x-4 px-3">
+                        <span class="text-xs px-2 font-medium bg-gray-500 bg-opacity-10 text-gray-800 rounded py-0.5">
+                            Badge
+                        </span>
+                        <span class="text-xs px-2 font-medium bg-red-500 bg-opacity-10 text-red-800 rounded py-0.5">
+                            Badge
+                        </span>
+
+                        <span
+                            class="text-xs px-2 font-medium bg-yellow-500 bg-opacity-10 text-yellow-800 rounded py-0.5">
+                            Badge
+                        </span>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+
+                        <div class="px-4 py-4 flex flex-row items-center">
+                            <span href="#"
+                                class="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row items-center">
+                                <svg height="13px" width="13px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                                    style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M277.333,256
+                                                        c0,11.797-9.536,21.333-21.333,21.333h-85.333c-11.797,0-21.333-9.536-21.333-21.333s9.536-21.333,21.333-21.333h64v-128
+                                                        c0-11.797,9.536-21.333,21.333-21.333s21.333,9.536,21.333,21.333V256z" />
+                                        </g>
+                                    </g>
+                                </svg>
+                                <span class="ml-1">6 mins ago</span></span>
+
+                        </div>
+
+                        <div>
+                            <a class="text-blue-500 hover:text-blue-700 font-bold py-2 px-4 ">
+                                Read More
+                            </a>
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+                <div class="rounded overflow-hidden shadow-lg">
+                    <a href="#">
+                        <div class="relative">
+                            <img class="w-full"
+                                src="https://images.pexels.com/photos/196667/pexels-photo-196667.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                alt="Sunset in the mountains">
+                        </div>
+                    </a>
+
+                    <div class="p-3 text-left">
+                        <a href="" class="text-blue-700 font-bold">Category1</a>
+                    </div>
+
+                    <div class="text-left px-3 pb-4">
+                        <a href="#"
+                            class="font-semibold text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out">
+                            Best
+                            View in Newyork City Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+                            ab?</a>
+                        <p class="text-gray-500 text-sm py-2">
+                            The city that never sleeps Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Architecto excepturi ipsam voluptatem ab, eius maxime tempore ipsa iste cupiditate
+                            accusantium accusamus dolores, hic temporibus minima voluptatibus aperiam enim quae fuga!
+                        </p>
+                    </div>
+
+                    <div class="flex space-x-4 px-3">
+                        <span class="text-xs px-2 font-medium bg-gray-500 bg-opacity-10 text-gray-800 rounded py-0.5">
+                            Badge
+                        </span>
+                        <span class="text-xs px-2 font-medium bg-red-500 bg-opacity-10 text-red-800 rounded py-0.5">
+                            Badge
+                        </span>
+
+                        <span
+                            class="text-xs px-2 font-medium bg-yellow-500 bg-opacity-10 text-yellow-800 rounded py-0.5">
+                            Badge
+                        </span>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+
+                        <div class="px-4 py-4 flex flex-row items-center">
+                            <span href="#"
+                                class="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row items-center">
+                                <svg height="13px" width="13px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                                    style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M277.333,256
+                                                        c0,11.797-9.536,21.333-21.333,21.333h-85.333c-11.797,0-21.333-9.536-21.333-21.333s9.536-21.333,21.333-21.333h64v-128
+                                                        c0-11.797,9.536-21.333,21.333-21.333s21.333,9.536,21.333,21.333V256z" />
+                                        </g>
+                                    </g>
+                                </svg>
+                                <span class="ml-1">6 mins ago</span></span>
+
+                        </div>
+
+                        <div>
+                            <a class="text-blue-500 hover:text-blue-700 font-bold py-2 px-4 ">
+                                Read More
+                            </a>
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+                <div class="rounded overflow-hidden shadow-lg">
+                    <a href="#">
+                        <div class="relative">
+                            <img class="w-full"
+                                src="https://images.pexels.com/photos/196667/pexels-photo-196667.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                alt="Sunset in the mountains">
+                        </div>
+                    </a>
+
+                    <div class="p-3 text-left">
+                        <a href="" class="text-blue-700 font-bold">Category1</a>
+                    </div>
+
+                    <div class="text-left px-3 pb-4">
+                        <a href="#"
+                            class="font-semibold text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out">
+                            Best
+                            View in Newyork City Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+                            ab?</a>
+                        <p class="text-gray-500 text-sm py-2">
+                            The city that never sleeps Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Architecto excepturi ipsam voluptatem ab, eius maxime tempore ipsa iste cupiditate
+                            accusantium accusamus dolores, hic temporibus minima voluptatibus aperiam enim quae fuga!
+                        </p>
+                    </div>
+
+                    <div class="flex space-x-4 px-3">
+                        <span class="text-xs px-2 font-medium bg-gray-500 bg-opacity-10 text-gray-800 rounded py-0.5">
+                            Badge
+                        </span>
+                        <span class="text-xs px-2 font-medium bg-red-500 bg-opacity-10 text-red-800 rounded py-0.5">
+                            Badge
+                        </span>
+
+                        <span
+                            class="text-xs px-2 font-medium bg-yellow-500 bg-opacity-10 text-yellow-800 rounded py-0.5">
+                            Badge
+                        </span>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+
+                        <div class="px-4 py-4 flex flex-row items-center">
+                            <span href="#"
+                                class="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row items-center">
+                                <svg height="13px" width="13px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                                    style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M277.333,256
+                                                        c0,11.797-9.536,21.333-21.333,21.333h-85.333c-11.797,0-21.333-9.536-21.333-21.333s9.536-21.333,21.333-21.333h64v-128
+                                                        c0-11.797,9.536-21.333,21.333-21.333s21.333,9.536,21.333,21.333V256z" />
+                                        </g>
+                                    </g>
+                                </svg>
+                                <span class="ml-1">6 mins ago</span></span>
+
+                        </div>
+
+                        <div>
+                            <a class="text-blue-500 hover:text-blue-700 font-bold py-2 px-4 ">
+                                Read More
+                            </a>
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+                <div class="rounded overflow-hidden shadow-lg">
+                    <a href="#">
+                        <div class="relative">
+                            <img class="w-full"
+                                src="https://images.pexels.com/photos/196667/pexels-photo-196667.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                alt="Sunset in the mountains">
+                        </div>
+                    </a>
+
+                    <div class="p-3 text-left">
+                        <a href="" class="text-blue-700 font-bold">Category1</a>
+                    </div>
+
+                    <div class="text-left px-3 pb-4">
+                        <a href="#"
+                            class="font-semibold text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out">
+                            Best
+                            View in Newyork City Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
+                            ab?</a>
+                        <p class="text-gray-500 text-sm py-2">
+                            The city that never sleeps Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                            Architecto excepturi ipsam voluptatem ab, eius maxime tempore ipsa iste cupiditate
+                            accusantium accusamus dolores, hic temporibus minima voluptatibus aperiam enim quae fuga!
+                        </p>
+                    </div>
+
+                    <div class="flex space-x-4 px-3">
+                        <span class="text-xs px-2 font-medium bg-gray-500 bg-opacity-10 text-gray-800 rounded py-0.5">
+                            Badge
+                        </span>
+                        <span class="text-xs px-2 font-medium bg-red-500 bg-opacity-10 text-red-800 rounded py-0.5">
+                            Badge
+                        </span>
+
+                        <span
+                            class="text-xs px-2 font-medium bg-yellow-500 bg-opacity-10 text-yellow-800 rounded py-0.5">
+                            Badge
+                        </span>
+                    </div>
+
+                    <div class="flex justify-between items-center">
+
+                        <div class="px-4 py-4 flex flex-row items-center">
+                            <span href="#"
+                                class="py-1 text-sm font-regular text-gray-900 mr-1 flex flex-row items-center">
+                                <svg height="13px" width="13px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512"
+                                    style="enable-background:new 0 0 512 512;" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <path d="M256,0C114.837,0,0,114.837,0,256s114.837,256,256,256s256-114.837,256-256S397.163,0,256,0z M277.333,256
+                                                        c0,11.797-9.536,21.333-21.333,21.333h-85.333c-11.797,0-21.333-9.536-21.333-21.333s9.536-21.333,21.333-21.333h64v-128
+                                                        c0-11.797,9.536-21.333,21.333-21.333s21.333,9.536,21.333,21.333V256z" />
+                                        </g>
+                                    </g>
+                                </svg>
+                                <span class="ml-1">6 mins ago</span></span>
+
+                        </div>
+
+                        <div>
+                            <a class="text-blue-500 hover:text-blue-700 font-bold py-2 px-4 ">
+                                Read More
+                            </a>
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <!--Pagination links-->
+        <div class="flex flex-col items-center my-12">
+            <div class="flex text-gray-700">
+                <div class="h-8 w-8 mr-1 flex justify-center items-center rounded-full bg-gray-200 cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left w-4 h-4">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </div>
+                <div class="flex h-8 font-medium rounded-full bg-gray-200">
+                    <div class="w-8 md:flex justify-center items-center hidden  cursor-pointer leading-5 transition duration-150 ease-in  rounded-full  ">1</div>
+                    <div class="w-8 md:flex justify-center items-center hidden  cursor-pointer leading-5 transition duration-150 ease-in  rounded-full  ">...</div>
+                    <div class="w-8 md:flex justify-center items-center hidden  cursor-pointer leading-5 transition duration-150 ease-in  rounded-full  ">3</div>
+                    <div class="w-8 md:flex justify-center items-center hidden  cursor-pointer leading-5 transition duration-150 ease-in  rounded-full bg-gray-600 text-white ">4</div>
+                    <div class="w-8 md:flex justify-center items-center hidden  cursor-pointer leading-5 transition duration-150 ease-in  rounded-full  ">5</div>
+                    <div class="w-8 md:flex justify-center items-center hidden  cursor-pointer leading-5 transition duration-150 ease-in  rounded-full  ">...</div>
+                    <div class="w-8 md:flex justify-center items-center hidden  cursor-pointer leading-5 transition duration-150 ease-in  rounded-full  ">15</div>
+                    <div class="w-8 h-8 md:hidden flex justify-center items-center cursor-pointer leading-5 transition duration-150 ease-in rounded-full bg-pink-600 text-white">4</div>
+                </div>
+                <div class="h-8 w-8 ml-1 flex justify-center items-center rounded-full bg-gray-200 cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right w-4 h-4">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <!--End pagination links-->
+    </div>
+    <!-- End more posts-->
+    <!-- FOOTER -->
+    <footer class="text-gray-600 body-font bg-gray-700">
+        <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+        <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-white p-2 bg-red-700 rounded-full" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+            </svg>
+            <span class="ml-3 text-xl text-white">DEV</span>
+            </a>
+            <p class="mt-2 text-sm text-white">Air plant banjo lyft occupy retro adaptogen indego</p>
+        </div>
+        <div class="flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="title-font font-bold text-white tracking-widest text-md mb-3">CATEGORIES</h2>
+            <nav class="list-none mb-10">
+                <li>
+                <a class="text-white hover:text-red-300" href="#">First Link</a>
+                </li>
+                <li>
+                <a class="text-white hover:text-red-300" href="#">Second Link</a>
+                </li>
+                <li>
+                <a class="text-white hover:text-red-300" href="#">Third Link</a>
+                </li>
+                <li>
+                <a class="text-white hover:text-red-300" href="#">Fourth Link</a>
+                </li>
+            </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="title-font font-bold text-white tracking-widest text-md mb-3">CATEGORIES</h2>
+            <nav class="list-none mb-10">
+                <li>
+                <a class="text-white hover:text-red-300" href="#">First Link</a>
+                </li>
+                <li>
+                <a class="text-white hover:text-red-300" href="#">Second Link</a>
+                </li>
+                <li>
+                <a class="text-white hover:text-red-300" href="#">Third Link</a>
+                </li>
+                <li>
+                <a class="text-white hover:text-red-300" href="#">Fourth Link</a>
+                </li>
+            </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="title-font font-bold text-white tracking-widest text-md mb-3">CATEGORIES</h2>
+            <nav class="list-none mb-10">
+                <li>
+                <a class="text-white hover:text-red-300" href="#">First Link</a>
+                </li>
+                <li>
+                <a class="text-white hover:text-red-300" href="#">Second Link</a>
+                </li>
+                <li>
+                <a class="text-white hover:text-red-300" href="#">Third Link</a>
+                </li>
+                <li>
+                <a class="text-white hover:text-red-300" href="#">Fourth Link</a>
+                </li>
+            </nav>
+            </div>
+            <div class="lg:w-1/4 md:w-1/2 w-full px-4">
+            <h2 class="title-font font-bold text-white tracking-widest text-md mb-3">CATEGORIES</h2>
+            <nav class="list-none mb-10">
+                <li>
+                <a class="text-white hover:text-red-300" href="#">First Link</a>
+                </li>
+                <li>
+                <a class="text-white hover:text-red-300" href="#">Second Link</a>
+                </li>
+                <li>
+                <a class="text-white hover:text-red-300" href="#">Third Link</a>
+                </li>
+                <li>
+                <a class="text-white hover:text-red-300" href="#">Fourth Link</a>
+                </li>
+            </nav>
+            </div>
+        </div>
+        </div>
+        <div class="bg-gray-900">
+        <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+            <p class="text-white text-sm text-center sm:text-left">© 2020 Dev —
+            <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-400 ml-1" target="_blank">@Developer</a>
+            </p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+            <a class="text-gray-200">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                </svg>
+            </a>
+            <a class="ml-3 text-gray-200">
+                <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                </svg>
+            </a>
+            <a class="ml-3 text-gray-200">
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                </svg>
+            </a>
+            <a class="ml-3 text-gray-200">
+                <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                </svg>
+            </a>
+            </span>
+        </div>
+        </div>
+    </footer>
+
+<script src="app.js"></script>
+</body>
+
+</html>
